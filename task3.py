@@ -1,7 +1,8 @@
 import sys
 from pathlib import Path
 from colorama import Fore
-my_path = Path(__file__).parent / "test"
+
+my_path = Path(sys.argv[1])
  
 def folder_structure(directory_path, indent=""):                         
     for el in directory_path.iterdir():
